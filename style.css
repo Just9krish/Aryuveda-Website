@@ -21,9 +21,28 @@ h5,
 h6 {
   font-family: "Roboto", sans-serif;
 }
+
+p {
+  margin: 15px 0;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+audio,
+iframe,
+img,
+video {
+  max-width: 100%;
+  vertical-align: top;
+}
+
 body {
   font-size: 15px;
-  font-family: "Robot", sans-serif;
+  font-family: 'Open', sans-serif;
+  color: #231f20;
+  /* font-family: 'Lato',arial; */
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 .main-block {
@@ -61,6 +80,9 @@ body {
   background: rgb(213, 226, 91);
 }
 
+.icon1 {
+  background-color: #e3fbe3;
+}
 .icon > img {
   margin: 1em;
 }
@@ -320,7 +342,6 @@ body {
   display: block;
   width: 50px;
   height: 2px;
-  background: #00740f;
   background: #1b5e00;
   bottom: 0;
   left: calc(50% - 25px);
@@ -355,6 +376,332 @@ body {
 
 /* Aryuveda Advantage */
 
+.advantage-section {
+  padding: 95px 0;
+  padding-bottom: 100px;
+  background-color: #e3fbe3;
+}
+
+.whythis {
+  width: 85%;
+  margin: 0 7em;
+}
+.advantage-container {
+  /* overflow: hidden; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.advantage-row {
+  width: 66%;
+}
+.advantage-grp {
+  color: rgba(35, 31, 32, 0.7);
+  font-size: 136%;
+  font-weight: 300;
+  line-height: 1.55;
+  width: 95%;
+  max-width: 675px;
+  padding: 0 0 30px;
+  padding-bottom: 30px;
+}
+
+/* .advantage-content-grp {
+  padding-bottom: 30px;
+} */
+.advantage-title {
+  position: relative;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  font-size: 2rem;
+  line-height: 1.1;
+  margin-top: 1em;
+}
+
+.advantage-title > span {
+  color: #1b5e00;
+}
+
+.advantage-dis {
+  font-family: 'Lato' sans-serif !important;
+  color: rgba(35, 31, 32, 0.7);
+  font-size: 18px;
+}
+
+.advantage-dis > span {
+  color: #1b5e00;
+}
+
+.advantage-list {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 0;
+  margin: 0 -6px;
+}
+
+.advantage-card {
+  width: 25%;
+  padding: 0 6px;
+  margin: 26px 9px 0;
+  background: #fff;
+}
+
+.advantage-card-detail {
+  width: 100%;
+  height: 100%;
+  min-height: 260px;
+  padding: 30px 28px 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+.advantage-icon {
+  display: block;
+  width: 100%;
+}
+
+.advantage-icon > i {
+  margin-bottom: 15px;
+  min-height: 52%;
+  max-height: 48px;
+  max-width: 62px;
+}
+
+.advantage-detail {
+  color: #200;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+.form-section {
+  width: 33%;
+}
+.advantage-frm-grp {
+  width: 90%;
+  max-width: 270px;
+  margin: 0 auto;
+}
+
+.form-title {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-bottom: 17px;
+}
+
+.slct-input {
+  position: relative;
+}
+.input-grp {
+  padding-bottom: 3px;
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+}
+
+.input-grp .slct-input-grp select {
+  color: rgba(0, 0, 0, 0.7);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.input-grp select,
+.input-grp input,
+.input-grp select,
+.input-grp textarea {
+  display: block;
+  color: #000;
+  font-family: 'Lato', arial;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  border: 0 none;
+  padding: 24px 25px;
+  margin: 5px 0 0;
+  width: 100%;
+  max-width: 100%;
+}
+
+.input-grp .slct-input-grp select,
+.input-grp .slct-input-grp select {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.inputgrp .select,
+.inputgrp input,
+.inputgrp select,
+.inputgrp textarea {
+  font-size: 13px;
+}
+.input-grp .slct-input-grp::after {
+  content: "";
+width: 13px;
+height: 6px;
+background-image: url(./assets/img/selectinput-arrow.png);
+background-repeat: no-repeat;
+background-size: contain;
+position: absolute;
+top: 50%;
+left: auto;
+right: 30px;
+transform: translateY(-50%);
+opacity: .7;
+}
+
+.frm-btn {
+  width: 100%;
+  max-width: 100%;
+  margin: 20px 0 0;
+  cursor: pointer;
+  color: #fff;
+  font-family: "Lato", arial;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.45;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  background-color: #1b5e00;
+  border: 1px solid #1b5e00;
+  padding: 24px 25px;
+  margin: 10px 0;
+  display: inline-block;
+  vertical-align: top;
+  min-width: 100px;
+}
+
+.frm-btn:hover {
+  background-color: #fff;
+  color: #1b5e00;
+}
+
+/* Stories Section */
+
+.stories-section {
+  padding: 105px 0;
+  /* background-color: #f4f1ea; */
+  position: relative;
+  overflow: hidden;
+}
+
+.story-cont {
+  width: 85%;
+  max-width: 1385px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.stories-section .secheader-grp {
+  font-size: 136%;
+  text-transform: capitalize;
+}
+.section-head-grp {
+  width: 95%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px 0 32px;
+  padding-bottom: 38px;
+  font-size: 136%;
+  text-transform: capitalize;
+  font-size: 136%;
+  font-weight: 300;
+  text-align: center;
+}
+
+.section-head-grp>p{
+  color: rgba(35, 31, 32, 0.7);
+  font-size: 17px;
+  margin: 0;
+  padding: 0;
+}
+.stories-column {
+  float: left;
+  width: 33.33%;
+  padding: 0 20px;
+  
+}
+
+.stories-row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.stories-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 810px) {
+  .stories-column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 0;
+  min-height: 512px;
+  background-color: #f1f1f1;
+}
+
+/* .stories-profile{
+  margin-bottom: 1em;
+} */
+.card img{
+  width: 100%;
+    height: 20vw;
+    object-fit: cover; 
+}
+
+.profile-detail{
+  font-size: 15px;
+  color: rgba(34,0,0,.8);
+font-weight: 300;
+line-height: 1.55;
+padding: 18px 25px;
+}
+
+.profile-detail>h4{
+  color: #1b5e00;
+  font-size: 19.19px;
+}
+
+.stories-btn-grp{
+  padding: 35px 0 0;
+  text-align: center;
+}
+.stories-btn-grp>a{
+  text-decoration: none;
+}
+.stories-btn{
+  color: #1b5e00;
+font-size: 14px;
+font-weight: 700;
+line-height: 1.5;
+letter-spacing: 2px;
+text-transform: uppercase;
+padding: 17.5px 40px;
+transition: all .3s ease-in-out;
+border: 1px solid #1b5e00;
+display: inline-block;
+vertical-align: top;
+margin: 15px 0 12px;
+}
+
+.stories-btn:hover{
+  background-color: #1b5e00;
+  color: #fff;
+}
+
 @media screen and (max-width: 810px) {
   .site-banner {
     height: 60%;
@@ -373,4 +720,9 @@ body {
     width: 100%;
     height: 40%;
   }
+  ul .stories-list {
+    margin: 0 -20px;
+  }
 }
+
+
