@@ -759,7 +759,7 @@ body {
   line-height: 1.5;
   letter-spacing: 2px;
   text-transform: uppercase;
-  padding: 17.5px 40px;
+  padding: 13.5px 45px;
   transition: all 0.3s ease-in-out;
   border: 1px solid #1b5e00;
   display: inline-block;
@@ -837,7 +837,6 @@ body {
 .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #00740f;
   background: #1b5e00;
   color: #fff;
   line-height: 1;
@@ -851,6 +850,9 @@ body {
   text-decoration: none;
 }
 
+.social-links a:hover {
+  background-color: #00740f;
+}
 .footer-links ul {
   list-style: none;
   padding: 0;
