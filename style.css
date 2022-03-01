@@ -1251,3 +1251,26 @@ align-items: center; */
     flex-direction: column;
   }
 }
+
+
+@media screen and (max-width: 1317px) {
+  
+  .shit-tech{
+    width: 90%;
+  }
+  .advantage-container{
+    flex-direction: column;
+  }
+  .advantage-row{
+    width: 100%;
+    height: auto;;
+  }
+
+  .form-section{
+    width: 100%;
+  }
+  .advantage-frm-grp{
+    width: 100%;
+    margin-top: 2em;
+  }
+}
