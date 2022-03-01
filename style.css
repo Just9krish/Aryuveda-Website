@@ -251,6 +251,7 @@ body {
   position: relative;
   padding: 42px 0;
   overflow: hidden;
+  background-color: #e3fbe3;
 }
 .whychoose {
   overflow: hidden;
@@ -586,6 +587,7 @@ body {
   font-weight: 700;
   line-height: 1.5;
   margin-bottom: 17px;
+  min-width: 394px;
 }
 
 .slct-input {
@@ -1272,5 +1274,6 @@ align-items: center; */
   .advantage-frm-grp{
     width: 100%;
     margin-top: 2em;
+    min-width: 394px;
   }
 }
