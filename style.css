@@ -1025,10 +1025,6 @@ color: #1b5e00;
   }
 
   .whychoose {
-    /* padding: 30px 0;
-  padding-bottom: 30px;
-padding-bottom: 65px; */
-
     width: 100% !important;
     max-width: 100% !important;
     margin: 0 auto;
@@ -1274,6 +1270,9 @@ align-items: center; */
   .advantage-frm-grp{
     width: 100%;
     margin-top: 2em;
-    min-width: 394px;
+    max-width: 394px;
+  }
+  .advantage-grp h4{
+    text-align: center;
   }
 }
