@@ -116,7 +116,7 @@ body {
 .icon > img {
   margin: 1em;
 }
-.icon p{
+.icon p {
   text-align: center;
 }
 
@@ -129,7 +129,7 @@ body {
 }
 
 .diseaseContainer {
-  width: 90%;
+  width: 82%;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -247,20 +247,28 @@ body {
 }
 
 /* Why Choose Section */
-
-.whychoose {
-  margin: 2em 7em;
+.whychoose-section {
+  position: relative;
+  padding: 42px 0;
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+}
+.whychoose {
+  overflow: hidden;
+  width: 82%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .why-header {
   margin-top: 1.9em;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .why-header > h1 {
   text-align: center;
@@ -320,13 +328,18 @@ body {
 }
 
 /* Service section */
-.service {
-  margin: 4em 7em;
+.service-section {
+  position: relative;
+  padding: 42px 0;
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+}
+.service {
+  overflow: hidden;
+  width: 82%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .section-title > h2 {
   text-align: center;
@@ -428,6 +441,7 @@ body {
 .service-btn-grp {
   margin-top: 3em;
   min-width: 43%;
+  text-align: center;
 }
 
 .service-appointment-btn {
@@ -449,20 +463,27 @@ body {
 /* Aryuveda Advantage */
 
 .advantage-section {
-  padding: 95px 0;
-  padding-bottom: 100px;
+  /* padding: 95px 0;
+  padding-bottom: 100px; */
+  position: relative;
+  padding: 42px 0;
+  overflow: hidden;
   background-color: #e3fbe3;
 }
 
 .whythis {
-  width: 85%;
-  margin: 0 7em;
+  overflow: hidden;
+  width: 82%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .advantage-container {
   /* overflow: hidden; */
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  /* flex-direction: row; */
+  /* flex-wrap: wrap; */
   align-items: flex-end;
 }
 
@@ -657,14 +678,14 @@ body {
 /* Stories Section */
 
 .stories-section {
-  padding: 105px 0;
-  /* background-color: #f4f1ea; */
   position: relative;
+  padding: 42px 0;
   overflow: hidden;
+  /* background-color: #e3fbe3; */
 }
 
 .story-cont {
-  width: 85%;
+  width: 82%;
   max-width: 1385px;
   margin-left: auto;
   margin-right: auto;
@@ -709,14 +730,6 @@ body {
   content: "";
   display: table;
   clear: both;
-}
-
-@media screen and (max-width: 810px) {
-  .stories-column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
 }
 
 .card {
@@ -790,7 +803,7 @@ body {
 }
 
 .footer-cont {
-  width: 89%;
+  width: 82%;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -927,10 +940,32 @@ body {
   cursor: pointer;
 }
 
+.footer-copy {
+  width: 100%;
+  max-width: 1140px;
+padding-right: 15px;
+padding-left: 15px;
+margin-right: auto;
+margin-left: auto;
+}
+.copyright-text {
+  text-align: center;
+padding-top: 30px;
+}
+.copy-credits {
+  padding-top: 10px;
+text-align: center;
+font-size: 13px;
+}
+
+.copy-credits a{
+  text-decoration: none;
+background-color: transparent;
+color: #1b5e00;
+}
 /* Media Quries */
 @media screen and (max-width: 810px) {
-
-  body{
+  body {
     font-size: 16px;
   }
 
@@ -959,50 +994,260 @@ body {
     padding: 11em 0;
   } */
 
-  .disease-title{
+  .disease-title {
     width: 100%;
-max-width: 100%;
-padding-bottom: 35px;
+    max-width: 100%;
+    padding-bottom: 35px;
   }
 
   .disease-title h2 {
     font-size: 30px;
   }
 
-  .disease-row{
+  .disease-row {
     margin: 0 -6px;
     flex-direction: column;
   }
 
-  .icon-box-cover{
+  .icon-box-cover {
     width: 100%;
     height: auto;
     margin-bottom: 15px;
   }
-.more-btn{
-  padding: 15.5px 32px;
-}
-  .more-btn-grp a{
+  .more-btn {
+    padding: 15.5px 32px;
+  }
+  .more-btn-grp a {
     min-width: 150px;
-font-size: 12px;
+    font-size: 12px;
   }
 
-  .whychoose{
+  .whychoose {
     /* padding: 30px 0;
   padding-bottom: 30px;
 padding-bottom: 65px; */
 
-width: 93% !important;
-max-width: 100% !important;
-padding-left: 10px;
-padding-right: 10px;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
-  .why-header{
+  .why-header {
     width: 100%;
     max-width: 100%;
   }
-  ul .stories-list {
-    margin: 0 -20px;
+
+  .why-header h1 {
+    margin: 0 auto;
+    font-size: 28px;
+  }
+
+  .why-text {
+    max-width: 100%;
+    font-size: 17px;
+  }
+
+  .why-text p {
+    width: 100%;
+  }
+
+  .whychoose-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  .service-section {
+    position: relative;
+    padding: 42px 0;
+    overflow: hidden;
+  }
+
+  .service {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .section-title {
+    text-align: center;
+    padding-bottom: 15px;
+  }
+
+  .section-title h2 {
+    /* font-size: 22px; */
+  }
+
+  .section-title p {
+    margin-bottom: 0;
+  }
+
+  .service-row {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  .service-btn-grp {
+    padding-top: 15px;
+    padding-bottom: 0;
+  }
+
+  .service-btn-grp button {
+    width: 100%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7px;
+    margin-bottom: 7px;
+  }
+
+  .advantage-section {
+    position: relative;
+    padding: 42px 0;
+    overflow: hidden;
+  }
+  .whythis {
+    padding-top: 0;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .advantage-container {
+    flex-direction: column;
+  }
+
+  .advantage-row {
+    float: none !important;
+    width: 100% !important;
+    clear: both !important;
+  }
+
+  .advantage-grp {
+    font-size: 125%;
+    text-align: center;
+    width: 100%;
+  }
+
+  .advantage-content-grp {
+    width: 100%;
+    max-width: 100%;
+    padding-bottom: 15px;
+  }
+
+  .advantage-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50%, 2fr));
+  }
+
+  .advantage-card {
+    width: 93%;
+    max-width: 100%;
+    margin-top: 10px;
+  }
+
+  .advantage-card-detail {
+    min-height: 240px;
+    /* display: flex;
+justify-content: center;
+align-items: center; */
+  }
+
+  .advantage-detail {
+    font-size: 15px;
+  }
+
+  .form-section {
+    float: none !important;
+    width: 100% !important;
+    clear: both !important;
+  }
+
+  .advantage-frm-grp {
+    width: 100%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .advantage-frm-grp .form-title {
+    text-align: center;
+    margin-top: 2em;
+  }
+
+  .stories-section {
+    position: relative;
+    padding: 42px 0;
+    overflow: hidden;
+  }
+
+  .story-cont {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .section-head-grp {
+    text-align: center;
+    padding-bottom: 15px;
+  }
+
+  .story-title p {
+    margin-bottom: 0;
+  }
+
+  .stories-column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    /* max-height: 700px; */
+  }
+
+  .stories-row {
+    display: flex;
+    width: auto;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+    flex-wrap: nowrap;
+    margin: 0 -8%;
+    padding: 0 6%;
+  }
+
+  .stories-column {
+    width: 100%;
+    max-width: 297px;
+    min-width: 297px;
+    padding: 12px 0;
+    margin-right: 24px;
+  }
+
+  .stories-column .card {
+    white-space: normal;
+    padding-bottom: 40px;
+  }
+
+  .stories-profile>img {
+    width: 100%;
+    height: auto;
+  }
+
+  .stories-btn-grp{
+    padding: 0;
+  }
+
+  .footer-cont {
+    width: 100%;
+  }
+
+  .footer-row {
+    flex-direction: column;
   }
 }
