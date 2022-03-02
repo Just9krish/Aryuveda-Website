@@ -978,7 +978,6 @@ body {
 	right: 50px;
 	z-index: 999;
 	cursor: pointer;
-  font-family: 'Robot' monospace;
 }
 
 .fab-icon-holder {
@@ -1333,6 +1332,12 @@ align-items: center; */
 
   .footer-row {
     flex-direction: column;
+  }
+
+  .fab-container{
+    position: fixed;
+bottom: 25px;
+right: 15px;
   }
 }
 
