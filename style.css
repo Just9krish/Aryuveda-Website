@@ -46,17 +46,20 @@ textarea {
   font-size: inherit;
   line-height: inherit;
 }
+
 [type="button"],
 [type="reset"],
 [type="submit"],
 button {
   -webkit-appearance: button;
 }
+
 input:focus,
 textaria:focus,
 select:focus {
   outline: none;
 }
+
 audio,
 iframe,
 img,
@@ -126,6 +129,7 @@ body {
   position: relative;
   padding: 42px 0;
   overflow: hidden;
+  margin-bottom: 40px;
 }
 
 .diseaseContainer {
@@ -134,10 +138,12 @@ body {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+
+  
 }
 
 .disease-title {
-  padding: 0 0 44px;
+  padding: 10px 0 44px;
   font-size: 1.7rem;
   text-align: center;
 }
@@ -260,6 +266,7 @@ body {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 40px;
 }
 
 .why-header {
@@ -325,14 +332,13 @@ body {
   font-weight: 700;
 }
 
-.whychoose-card > img {
-}
-
 /* Service section */
 .service-section {
   position: relative;
   padding: 42px 0;
   overflow: hidden;
+
+  margin-bottom: 40px;
 }
 .service {
   overflow: hidden;
@@ -942,26 +948,112 @@ body {
 .footer-copy {
   width: 100%;
   max-width: 1140px;
-padding-right: 15px;
-padding-left: 15px;
-margin-right: auto;
-margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .copyright-text {
   text-align: center;
-padding-top: 30px;
+  padding-top: 30px;
 }
 .copy-credits {
   padding-top: 10px;
-text-align: center;
-font-size: 13px;
+  text-align: center;
+  font-size: 13px;
 }
 
-.copy-credits a{
+.copy-credits a {
   text-decoration: none;
-background-color: transparent;
-color: #1b5e00;
+  background-color: transparent;
+  color: #1b5e00;
 }
+
+
+/* Fab button styling */
+
+.fab-container {
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+	z-index: 999;
+	cursor: pointer;
+  font-family: 'Robot' monospace;
+}
+
+.fab-icon-holder {
+	width: 50px;
+	height: 50px;
+	border-radius: 100%;
+	background: rgb(213, 226, 91);
+  background: #339E66FF;
+
+	box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+.fab-icon-holder:hover{
+	opacity: 0.8;
+}
+
+.fab-icon-holder i {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	height: 100%;
+	font-size: 25px;
+	color: #ffffff;
+}
+
+.fab {
+	width: 60px;
+	height: 60px;
+	background: #1b5e00;
+}
+
+.fab-options {
+	list-style-type: none;
+	margin: 0;
+
+	position: absolute;
+	bottom: 70px;
+	right: 0;
+
+	opacity: 0;
+
+	transition: all 0.3s ease;
+	transform: scale(0);
+	transform-origin: 85% bottom;
+}
+
+.fab:hover + .fab-options, .fab-options:hover {
+	opacity: 1;
+	transform: scale(1);
+}
+
+.fab-options li {
+	display: flex;
+	justify-content: flex-end;
+	padding: 5px;
+}
+
+.fab-label {
+	padding: 2px 5px;
+	align-self: center;
+	user-select: none;
+	white-space: nowrap;
+	border-radius: 3px;
+	font-size: 16px;
+	background: #7DB46CFF;
+	color: #E7EBE0FF;
+  font-size: 17px;
+	box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+	margin-right: 10px;
+}
+
+
+
+
 /* Media Quries */
 @media screen and (max-width: 810px) {
   body {
@@ -1070,10 +1162,6 @@ color: #1b5e00;
   .section-title {
     text-align: center;
     padding-bottom: 15px;
-  }
-
-  .section-title h2 {
-    /* font-size: 22px; */
   }
 
   .section-title p {
@@ -1230,12 +1318,12 @@ align-items: center; */
     padding-bottom: 40px;
   }
 
-  .stories-profile>img {
+  .stories-profile > img {
     width: 100%;
     height: auto;
   }
 
-  .stories-btn-grp{
+  .stories-btn-grp {
     padding: 0;
   }
 
@@ -1248,29 +1336,27 @@ align-items: center; */
   }
 }
 
-
 @media screen and (max-width: 1317px) {
-  
-  .shit-tech{
+  .shit-tech {
     width: 90%;
   }
-  .advantage-container{
+  .advantage-container {
     flex-direction: column;
   }
-  .advantage-row{
+  .advantage-row {
     width: 100%;
-    height: auto;;
+    height: auto;
   }
 
-  .form-section{
+  .form-section {
     width: 100%;
   }
-  .advantage-frm-grp{
+  .advantage-frm-grp {
     width: 100%;
     margin-top: 2em;
     max-width: 394px;
   }
-  .form-section h4{
+  .form-section h4 {
     text-align: center;
   }
 }
