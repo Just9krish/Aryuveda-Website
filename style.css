@@ -1434,7 +1434,7 @@ align-items: center; */
   .fab-container2 {
     position: fixed;
     bottom: 25px;
-    right: 15px;
+    left: 15px;
   }
 }
 
