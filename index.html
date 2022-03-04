@@ -548,7 +548,7 @@
 
         <!-- Modal content -->
         <div class="modal-content">
-            <span class="close">&times;</span>
+            <span id="close-btn" class="close">&times;</span>
             <h2>Healthy Ayurveda Products</h2>
             <hr>
             <h4 class="modal-sub-title">Books</h4>
@@ -756,6 +756,18 @@
                 modal.style.display = "none";
             }
         } 
+
+
+
+       document.querySelector("#myBtn").addEventListener('click', function() {
+           document.querySelector("#myModal").style.display = 'block';
+           document.querySelector("body").style.overflow ='hidden';
+       });
+
+       document.querySelector("#close-btn").addEventListener('click', function() {
+           document.querySelector("#myModal").style.display = 'none';
+           document.querySelector("body").style.overflow ='visible';
+       });
     </script>
 
 </body>
